@@ -3,8 +3,7 @@
   <p style="font-size: 1.2em; color: #666;">Generate UI components across different libraries effortlessly</p>
 </div>
 
-# UI Gen
-
+---
 A modern CLI tool for scaffolding and managing UI components across different component libraries. Generate, customize, and maintain your UI components with ease.
 
 <a href="https://imgbox.com/Rtx5hiZ3" target="_blank"><img src="https://thumbs2.imgbox.com/dd/72/Rtx5hiZ3_t.png" alt="image host"/></a>
@@ -136,4 +135,4 @@ MIT © [DoffuXx](https://github.com/DoffuXx)
 
 ---
 
-<p align="center">Made with ❤️ by [DoffuXx] <3 </p>
+<p align="center">Made with ❤️ by [DoffuXx] </p>
