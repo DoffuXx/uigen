@@ -1,7 +1,5 @@
 # uigen
 
-**NOTE : WIP - Work in Progress - This is a work in progress and not yet ready for use.**
-
 A modern CLI tool for scaffolding and managing UI components across different component libraries. Generate, customize, and maintain your UI components with ease.
 
 <a href="https://imgbox.com/Rtx5hiZ3" target="_blank"><img src="https://thumbs2.imgbox.com/dd/72/Rtx5hiZ3_t.png" alt="image host"/></a>
@@ -46,7 +44,10 @@ uigen add -c button -l aceternity -o ./components/ui
 uigen list
 
 # Show help
-uigen --help
+uigen help
+
+# Show version
+uigen --version
 ```
 
 ### Command Options
@@ -56,8 +57,6 @@ Options:
   -c, --component <name>    Component name
   -l, --library <name>      UI library (default: "shadcn")
   -o, --outDir <path>      Output directory
-  -h, --help               Display help
-  -v, --version            Display version
 ```
 
 ## Supported Libraries 📚
@@ -82,7 +81,7 @@ your-project/
         └── cn.ts
 ```
 
-## Configuration ⚙️
+## Configuration (wip) ⚙️
 
 Create a `uigen.config.js` file in your project root:
 
