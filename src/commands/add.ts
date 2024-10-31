@@ -6,11 +6,9 @@ import { ValidateComponent } from '../utils/Validation';
 import path from 'path';
 import { writeComponentFile } from '../utils/fs';
 import fs from 'fs-extra';
-import { AddOptions } from '../types/schema';
 import { logger } from '../utils/logger';
 import { File } from '../types';
 import { ComponentTypes } from '../types';
-import { aceternityComponents } from '../registry/aceternity/components/components';
 
 const addOptionsSchema = z.object({
   component: z.string().optional(),
@@ -23,7 +21,7 @@ async function selectLibrary(): Promise<string> {
     {
       type: 'list',
       name: 'library',
-      message: 'Select a UI library',
+      message: 'Select a UI library 📚',
       choices: Object.entries(registry).map(([key, lib]) => ({
         name: `${lib.name} - ${lib.description} - Github Link : ${lib.githubUrl}`,
         value: key,
@@ -38,9 +36,9 @@ async function selectComponent(library: string): Promise<string> {
     {
       type: 'list',
       name: 'component',
-      message: 'Select a Component',
+      message: 'Select a Component 🧩',
       choices: registry[library].components.map((key, comp) => ({
-        name: `${key.name} - ${key.description}`,
+        name: `${key.name} - ${key.description} - last update : ${key.updatedAt}`,
         value: key.type,
       })),
     },
@@ -85,6 +83,8 @@ export const createAddCommand = () => {
         const parsedResult = ValidateComponent(componentData);
         const componentDatas = parsedResult.data as ComponentTypes;
         await processComponentFiles(componentDatas.files, options);
+
+        logger.info('Component added successfully 🎉');
       } catch (error) {
         if (error instanceof z.ZodError) {
           logger.error('Validation error:', error.errors);
