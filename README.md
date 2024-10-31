@@ -14,11 +14,9 @@ A modern CLI tool for scaffolding and managing UI components across different co
 
 - 🚀 Quick component generation
 - 📚 Support for multiple UI libraries
-- 🎨 Customizable templates
 - 🔄 Auto-install dependencies
 - 📦 Built-in component registry
 - 🛠 TypeScript support
-- 🧪 Test file generation
 
 ## Installation 🔧
 
@@ -122,6 +120,7 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 - [ ] Component documentation generator
 - [ ] Component showcase generator
 - [ ] Visual component editor
+- [ ] Test file generation
 
 ## License 📄
 
