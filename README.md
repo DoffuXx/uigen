@@ -1,5 +1,5 @@
 <div style="text-align: center; padding: 20px; background-color: #f0f0f0; border-radius: 10px; margin-bottom: 20px;">
-  <h1 style="font-size: 2.5em; color: #333;">✨ UI Gen (beta) ✨</h1>
+  <h1 style="font-size: 2.5em; color: #333;">✨ UI Gen (alpha) ✨</h1>
   <p style="font-size: 1.2em; color: #666;">Generate UI components across different libraries effortlessly</p>
 </div>
 
