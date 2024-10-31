@@ -1,8 +1,15 @@
-# uigen
+<div style="text-align: center; padding: 20px; background-color: #f0f0f0; border-radius: 10px; margin-bottom: 20px;">
+  <h1 style="font-size: 2.5em; color: #333;">✨ UI Gen ✨</h1>
+  <p style="font-size: 1.2em; color: #666;">Generate UI components across different libraries effortlessly</p>
+</div>
+
+# UI Gen
 
 A modern CLI tool for scaffolding and managing UI components across different component libraries. Generate, customize, and maintain your UI components with ease.
 
 <a href="https://imgbox.com/Rtx5hiZ3" target="_blank"><img src="https://thumbs2.imgbox.com/dd/72/Rtx5hiZ3_t.png" alt="image host"/></a>
+
+[![asciicast](https://asciinema.org/a/lGeMMYyKeISbAIvdlbXJrDNwU.svg)](https://asciinema.org/a/lGeMMYyKeISbAIvdlbXJrDNwU)
 
 ## Features ✨
 
