@@ -1,18 +1,21 @@
 {
-  "name": "typescript-npm-package-template",
-  "version": "0.0.0-development",
-  "description": "A template for creating npm packages using TypeScript and VSCode",
-  "main": "./lib/index.js",
+  "name": "uigen",
+  "version": "1.0.0",
+  "description": "Modern UI component generator CLI",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "uigen": "./dist/index.js"
+  },
   "files": [
-    "lib/**/*"
+    "dist"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.build.json",
-    "buildcli": "tsc",
+    "build": "tsup",
     "dev": "tsx src/index.ts",
     "clean": "rm -rf ./lib/",
     "cm": "cz",
-    "lint": "eslint ./src/ --fix",
+    "lint": "eslint . --ext .ts,.tsx --max-warnings 0",
     "prepare": "husky install",
     "semantic-release": "semantic-release",
     "test:watch": "jest --watch",
@@ -25,28 +28,25 @@
   },
   "license": "MIT",
   "author": {
-    "name": "Ryan Sonshine",
-    "email": "ryansonshine@users.noreply.github.com",
-    "url": "https://github.com/ryansonshine"
+    "name": "Ali Touil",
+    "email": "touilalistudent@gmail.com",
+    "url": "https://github.com/DoffuXx"
   },
   "engines": {
     "node": ">=12.0"
   },
   "keywords": [
-    "boilerplate",
-    "template",
-    "typescript",
-    "vscode",
-    "jest",
-    "husky",
-    "commitizen",
-    "semantic-release",
-    "codecov"
+    "cli",
+    "ui",
+    "components",
+    "generator",
+    "react",
+    "typescript"
   ],
   "bugs": {
-    "url": "https://github.com/ryansonshine/typescript-npm-package-template/issues"
+    "url": "https://github.com/DoffuXx/uigen/issues"
   },
-  "homepage": "https://github.com/ryansonshine/typescript-npm-package-template#readme",
+  "homepage": "https://github.com/DoffuXx/uigen#readme",
   "devDependencies": {
     "@ryansonshine/commitizen": "^4.2.8",
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
@@ -124,11 +124,12 @@
     ]
   },
   "dependencies": {
-    "chalk": "^5.3.0",
+    "chalk": "^4.1.2",
     "commander": "^12.1.0",
     "fs-extra": "^11.2.0",
     "inquirer": "^12.0.1",
     "path": "^0.12.7",
+    "tsup": "^8.3.5",
     "zod": "^3.23.8"
   }
 }
