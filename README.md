@@ -4,7 +4,7 @@
 
 A modern CLI tool for scaffolding and managing UI components across different component libraries. Generate, customize, and maintain your UI components with ease.
 
-![uigen Banner](https://imgbox.com/Rtx5hiZ3)
+<a href="https://imgbox.com/Rtx5hiZ3" target="_blank"><img src="https://thumbs2.imgbox.com/dd/72/Rtx5hiZ3_t.png" alt="image host"/></a>
 
 ## Features ✨
 
