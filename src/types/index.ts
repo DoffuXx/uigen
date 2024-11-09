@@ -46,12 +46,18 @@ export const FileSchema = z.object({
 
 export const ComponentSchema = z.object({
   description: z.string(),
+  link: z.string(),
   name: z.string(),
   type: z.nativeEnum(ComponentType),
   updatedAt: z.string(),
   files: z.array(FileSchema),
+  usage: z.string(),
   dependencies: z.array(z.string()).optional(),
   devDependencies: z.array(z.string()).optional(),
+  libutils: z.boolean().optional(),
+  tailwindconfig: z.string().optional(),
+  // NOTE: Future work
+  preview: z.string().optional(),
 });
 
 export const LibrarySchema = z.object({

@@ -1,4 +1,6 @@
 import chalk from 'chalk';
+import ora from 'ora';
+import type { Options, Ora } from 'ora';
 
 export const logger = {
   info: (message: string) => {
@@ -15,5 +17,8 @@ export const logger = {
   },
   warn: (message: string) => {
     console.log(chalk.yellow('⚠'), message);
+  },
+  spinner: (options: string | Options): Ora => {
+    return ora(options);
   },
 };
