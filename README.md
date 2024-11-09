@@ -107,6 +107,9 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 
 ## Roadmap 🗺️
 
+- [x] Installing Dependencies
+- [ ] Check if Src folder exists
+- [ ] Test file generation
 - [ ] Host component registry online (json)
 - [ ] Add more UI libraries
 - [ ] Component dependency management
@@ -114,7 +117,6 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 - [ ] Component documentation generator
 - [ ] Component showcase generator
 - [ ] Visual component editor
-- [ ] Test file generation
 
 ## License 📄
 
